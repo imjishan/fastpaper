@@ -25,7 +25,6 @@ export default function Home() {
           <Separator />
         </div>
         <div className='w-full'>
-          <VideoPlayer videoSrc="https://utfs.io/f/45ce5f08-1c16-42f6-a9d2-9037a62018d1-fsqn4g.mp4" />
         </div>
         <BlogCardSection />
       </div>
