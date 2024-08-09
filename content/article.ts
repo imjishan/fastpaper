@@ -25,4 +25,16 @@ export const blogs = [
     image: "https://utfs.io/f/db400086-1ef0-4a18-9941-6b398789d65d-u8tcx6.png",
     keywords: [],
   },
+  {
+    id: 1,
+    name: "Changing Fonts in Next.js 14 Project",
+    description: "Learn how to change fonts in your Next.js 14 project.",
+    title: "Changing Fonts in Next.js 14",
+    slug: "changing-fonts-nextjs",
+    created_at: new Date("8/9/2024").toLocaleString(),
+    link: "/blog/changing-fonts-nextjs",
+    article: changing_fonts_article,
+    image: "",
+    keywords: ["fonts", "Next.js", "CSS"],
+  }
 ];
