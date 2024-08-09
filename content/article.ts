@@ -1,5 +1,6 @@
 import { data_fetching_article } from "./articles/data-fetching";
 import { html_article_rendering } from "./articles/html-redering";
+import { changing_fonts_article } from "./articles/changing-fonts";
 export const blogs = [
   {
     id: 0,
