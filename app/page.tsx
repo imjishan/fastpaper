@@ -20,10 +20,7 @@ export default function Home() {
             <Github className='w-5 h-5' aria-hidden="true" />
           </Link>
         </div>
-        <div className='flex flex-col items-start justify-center w-full gap-2 mb-4 '>
-          <h1 className='scroll-m-20 text-xl font-medium tracking-tight'>Render Your Blog Using HTML instead of Markdown</h1>
-          <Separator />
-        </div>
+       
         <div className='w-full'>
         </div>
         <BlogCardSection />
