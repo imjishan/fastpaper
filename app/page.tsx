@@ -12,7 +12,7 @@ export default function Home() {
       <div className='flex flex-col flex-wrap items-center justify-center mt-[1rem] mb-[6rem] p-2 w-full max-w-[650px]'>
         <div className="flex justify-end items-center mb-1 w-full">
           <Link
-            href="https://github.com/michaelshimeles/html-blog-renderer"
+            href="https://github.com/imjishan"
             target='_blank'
             className='animate-buttonheartbeat border p-2 rounded-full hover:dark:bg-black hover:cursor-pointer'
             aria-label="View HTML Blog Rendering Template on GitHub"
