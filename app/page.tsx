@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <PageWrapper>
-      <div className='flex flex-col flex-wrap items-center justify-center mt-[3rem] mb-[6rem] p-3 w-full max-w-[650px]'>
+      <div className='flex flex-col flex-wrap items-center justify-center mt-[1rem] mb-[6rem] p-2 w-full max-w-[650px]'>
         <div className="flex justify-end items-center mb-1 w-full">
           <Link
             href="https://github.com/michaelshimeles/html-blog-renderer"
@@ -29,7 +29,6 @@ export default function Home() {
         </div>
         <BlogCardSection />
       </div>
-      <FloatingBadge />
     </PageWrapper>
   );
 }
