@@ -34,7 +34,7 @@ export const blogs = [
     created_at: new Date("8/9/2024").toLocaleString(),
     link: "/blog/changing-fonts-nextjs",
     article: changing_fonts_article,
-    image: "",
+    image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Re6oE6-0z_UwepE0MSUMYg.png",
     keywords: ["fonts", "Next.js", "CSS"],
   }
 ];
