@@ -46,7 +46,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
   const response = getBlogs(params?.slug)
   return (
     <PageWrapper>
-      <article className="container relative max-w-3xl mt-[4rem]">
+      <article className="container relative max-w-3xl mt-[2rem]">
         <div className="flex justify-end items-center w-full min-[1280px]:hidden">
           <Link href="/" className={cn(buttonVariants({ variant: "ghost" }), "rounded")}>
             <ChevronLeft className="mr-2 h-4 w-4" />
