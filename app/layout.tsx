@@ -8,10 +8,10 @@ import { ThemeProvider } from 'next-themes'
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://html-blog.rasmic.xyz"),
+  metadataBase: new URL("https://fastpap.vercel.app"),
   title: {
-    default: 'HTML Blog',
-    template: `%s | HTML Blog`
+    default: 'fastpap blog',
+    template: `%s | Blog`
   },
   description: 'Set up HTML rendering for blog content in Next.js, moving away from Markdown to a more flexible HTML-based approach.',
   openGraph: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'HTML Blog',
     description: 'Set up HTML rendering for blog content in Next.js, moving away from Markdown to a more flexible HTML-based approach.',
-    creator: "@rasmickyy",
+    creator: "@JishanCodes",
     images: ['https://utfs.io/f/7b032369-edf0-4248-af33-891f8e356f92-k8z3io.png'],
   },
   keywords: ['Michael Shimeles, Ras Mic', 'HTML Blog Rendering'],
