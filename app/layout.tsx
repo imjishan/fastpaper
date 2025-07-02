@@ -1,54 +1,37 @@
-import Provider from '@/app/provider'
-import { Toaster } from "@/components/ui/sonner"
-import { Analytics } from "@vercel/analytics/react"
-import { GeistSans } from 'geist/font/sans'
-import type { Metadata } from 'next'
-import './globals.css'
-import { ThemeProvider } from 'next-themes'
-
+import React from "react";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fastpap.vercel.app"),
-  title: {
-    default: 'fastpap blog',
-    template: `%s | Blog`
-  },
-  description: 'Set up HTML rendering for blog content in Next.js, moving away from Markdown to a more flexible HTML-based approach.',
+  title: "Alex Tkachev — Freelance UI/UX Designer",
+  description: "Digital Versatile Designer based in Almaty (KZ). Currently available for Freelance Projects.",
+  keywords: ["UI/UX Designer", "Freelance", "Digital Designer", "Portfolio", "Alex Tkachev"],
+  authors: [{ name: "Alex Tkachev" }],
+  creator: "Alex Tkachev",
   openGraph: {
-    description: 'Set up HTML rendering for blog content in Next.js, moving away from Markdown to a more flexible HTML-based approach.',
-    images: ['https://utfs.io/f/7b032369-edf0-4248-af33-891f8e356f92-k8z3io.png'],
-    url: 'https://html-blog.rasmic.xyz/'
+    title: "Alex Tkachev — Freelance UI/UX Designer",
+    description: "Digital Versatile Designer based in Almaty (KZ)",
+    type: "website",
+    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'HTML Blog',
-    description: 'Set up HTML rendering for blog content in Next.js, moving away from Markdown to a more flexible HTML-based approach.',
-    creator: "@JishanCodes",
-    images: ['https://utfs.io/f/7b032369-edf0-4248-af33-891f8e356f92-k8z3io.png'],
+    card: "summary_large_image",
+    title: "Alex Tkachev — Freelance UI/UX Designer",
+    description: "Digital Versatile Designer based in Almaty (KZ)",
   },
-  keywords: ['Michael Shimeles, Ras Mic', 'HTML Blog Rendering'],
-}
+};
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={GeistSans.className}>
-        <Provider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-          <Toaster />
-        </Provider>
-        <Analytics />
+    <html lang="en" className={GeistSans.variable}>
+      <body className="antialiased bg-white text-black min-h-screen font-sans">
+        {children}
       </body>
     </html>
-  )
+  );
 }
