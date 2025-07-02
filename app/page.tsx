@@ -1,3 +1,11 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import LatestProject from "@/components/LatestProject";
+import SocialLinks from "@/components/SocialLinks";
 import BlogCardSection from "@/components/blog-card-section";
 import FloatingBadge from "@/components/floating-badge";
 import { Separator } from "@/components/ui/separator";
@@ -8,23 +16,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <PageWrapper>
-      <div className='flex flex-col flex-wrap items-center justify-center mt-[1rem] mb-[6rem] p-2 w-full max-w-[650px]'>
-        <div className="flex justify-end items-center mb-1 w-full">
-          <Link
-            href="https://github.com/imjishan"
-            target='_blank'
-            className='animate-buttonheartbeat border p-2 rounded-full hover:dark:bg-black hover:cursor-pointer'
-            aria-label="View HTML Blog Rendering Template on GitHub"
-          >
-            <Github className='w-5 h-5' aria-hidden="true" />
-          </Link>
-        </div>
-       
-        <div className='w-full'>
-        </div>
-        <BlogCardSection />
+    <main className="min-h-screen bg-white">
+      <Navigation />
+      <div className="container">
+        <Hero />
+        <LatestProject />
+        <SocialLinks />
       </div>
-    </PageWrapper>
+    </main>
   );
 }
